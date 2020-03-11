@@ -1,0 +1,292 @@
+/*--------------------[ COLORS ]--------------------*/
+@blue:#00ffff;//005593
+@dBlue:#005593;
+@cyan:#00a1df;
+@red:#e3173e;
+@dark:#242b34;
+@grey:#ededed;
+@lGrey:#a2a2a2;
+@dGrey:#747474;
+@blue-cyan:linear-gradient(135deg, #43cbff 10%, #9708cc 100%);//linear-gradient(to right, @blue 0%, @cyan 100%);
+//-background
+.blue-cyan{
+  background-image: @blue-cyan;
+}
+
+.grey{
+  background-color: @grey;
+}
+
+.lGrey{
+  background-color: @lGrey;
+}
+
+.dGrey{
+  background-color: @dGrey;
+}
+
+.dark{
+  background-color: @dark;
+}
+
+.red{
+  background-color: @red;
+}
+
+.cyan{
+  background-color: @cyan;
+}
+
+.dBlue{
+  background-color: @dBlue;
+}
+
+.blue{
+  background-color: @blue;
+}
+
+.black{
+  background-color: #000000;
+}
+
+.white{
+  background-color: #ffffff;
+}
+
+//-font color
+.fGrey{
+  color:@grey
+}
+
+.fLgrey{
+  color: @lGrey;
+}
+
+.fDgrey{
+  color:@dGrey;
+}
+
+.fDark{
+  color:@dark
+}
+
+.fRed{
+  color:@red;
+}
+
+.fCyan{
+  color:@cyan;
+}
+
+.fBlue{
+  color:@blue;
+}
+
+.fBlack{
+  color:#000000;
+}
+
+.fWhite{
+  color:#ffffff;
+}
+
+/*--------------------[ position ]--------------------*/
+
+.flex_column{
+  display: flex;
+  flex-direction: column;
+}
+
+.flex_row{
+  display: flex;
+  flex-direction: row;
+}
+
+.justify_start{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.justify_around{
+  display: flex;
+  justify-content: space-around;
+}
+
+.justify_between{
+  display: flex;
+  justify-content: space-between;
+}
+
+.justify_center{
+  display: flex;
+  justify-content: center;
+}
+
+.justify_end{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.align_start{
+  display: flex;
+  align-items: flex-start;
+}
+
+.align_center{
+  display: flex;
+  align-items: center;
+}
+
+.align_end{
+  display: flex;
+  align-items: flex-end;
+}
+
+.align_self_start{
+  align-self: start;
+}
+
+.align_self_center{
+  align-self: center;
+}
+
+.align_self_end{
+  align-self: end;
+}
+
+.flex_wrap{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*--------------------[ style ]--------------------*/
+
+#demento-content{
+  margin: 2em 0;
+  .carDataBase{
+    .header{
+      ul.navbar-nav{
+        li{
+          cursor: pointer;
+          span{
+            padding:0 0.4rem;
+          }
+        }
+      }
+    }
+    .wrapper-content{
+      position: relative;
+      .content{
+        position: absolute;
+        top: 0;
+        left: -9999px;
+        width: 100%;
+        padding-top: 2em;
+        &:first-child{
+          left: 0;
+        }
+        .saveFoTextarea{
+          margin: 2rem auto;
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+/*--------------------[ select-box ]--------------------*/
+.select-box{
+  position: relative;
+  &.last{
+    ul{
+      left: initial;
+      right: 0;
+    }
+  }
+  &:disabled{
+    button{
+      color:grey;
+      cursor: auto;
+    }
+  }
+  &>button{
+    width: 100%;
+  }
+  ul{
+    position: absolute;
+    display: none;
+    opacity: 0;
+    top: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    li{
+      position: relative;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      &.search{
+        background-color: #ffffff;
+      }
+      &.add{
+        text-align: center;
+        display: none;
+      }
+      &:hover:not(.search):not(.add){
+        background-color: #0073aa;
+        color: #ffffff;
+        transition-duration: 0.4s;
+      }
+      .remove {
+        position: absolute;
+        right: 10px;
+        top: 20%;
+        width: 20px;
+        height: 20px;
+        opacity: 0.3;
+      }
+      .remove:hover {
+        opacity: 1;
+      }
+      .remove:before, .remove:after {
+        position: absolute;
+        left: 10px;
+        content: ' ';
+        height: 20px;
+        width: 2px;
+        background-color: #c82333;
+      }
+      .remove:before {
+        transform: rotate(45deg);
+      }
+      .remove:after {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+.list-mark_model_restyling{
+  width: 100%;
+}
+
+.equipment-wrapper{
+  h3{
+    padding:2rem 0  ;
+    width: 100%;
+  }
+  &>.form-group{
+    width: 30%;
+    max-width: 30%;
+  }
+}
+
+.characters-wrapper{
+  &>.form-group{
+    width: 25%;
+  }
+}
+

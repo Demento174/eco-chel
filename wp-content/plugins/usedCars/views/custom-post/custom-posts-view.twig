@@ -1,0 +1,39 @@
+{% extends '././base.twig' %}
+{% block content %}
+	<div class="row">
+		<div class="col-sm-12 col-md-12 col-lg-12 col-xl-2"></div>
+		<div class="col-sm-12 col-md-12 col-lg-12 col-xl-8">
+			<form>
+				<div class="form-row">
+					<div class="form-group col-12">
+						<label for="slug">Slug</label>
+						<input type="text" name="slug" class="form-control" id="slug" placeholder="{{ fields.slug }}">
+					</div>
+					
+					<div class="form-group col-6">
+						<h4>Поля</h4>
+						{% for key,item in fields.labels %}
+							<label for="{{ key }}">{{ key }}</label>
+							<input type="text" name="{{ key }}" class="form-control" id="{{ key }}" value="{{ item.value }}">
+							<small  class="form-text text-muted">{{ item.ru }}</small>
+							<hr>
+						{% endfor %}
+					</div>
+					<div class="form-group col-6">
+						<h4>Аргументы</h4>
+						{% for key,item in fields.args %}
+							<label for="{{ key }}">{{ key }}</label>
+							<input type="text" name="{{ key }}" class="form-control" id="{{ key }}" value="{{ item.value }}">
+							<small  class="form-text text-muted">{{ item.ru }}</small>
+							<hr>
+						{% endfor %}
+					</div>
+				</div>
+				
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+		</div>
+		<div class="col-sm-12 col-md-12 col-lg-12 col-xl-2"></div>
+	</div>
+
+{% endblock %}

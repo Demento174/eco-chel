@@ -1,0 +1,101 @@
+<section class="section section-conditions">
+    <div class="container">
+        <h1 class="title-page heading heading_lg text_center">Условия оплаты и доставки</h1>
+        <h3 class="heading heading_sm text_center">Доставка</h3>
+        <div class="card conditions-card">
+            <div class="wrap-img">
+                <img src="{{ get_template_directory_uri() }}/assets/img/car.png" alt="delivery">
+            </div>
+            <ul class="unorder-list text_md">
+                {% for item in conditions.shipping %}
+
+                    <li class="unorder-list__item">
+                        {{ item.item }}
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <h3 class="heading heading_sm text_center">Оплата</h3>
+        <div class="card card_payment">
+            <div class="wrap-img">
+                <img src="{{ get_template_directory_uri() }}/assets/img/payment.png" alt="delivery">
+            </div>
+            <ul class="unorder-list text_md">
+                {% for item in conditions.payment %}
+                    <li class="unorder-list__item">
+                        {{ item.item }}
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="opportunities">
+           {{ content }}
+        </div>
+    </div>
+</section>
+{#<section class="section section-advantages">#}
+{#    <div class="container">#}
+{#        <h2 class="section__title heading heading_lg text_center">ПОЧЕМУ С НАМИ ВЫГОДНО?</h2>#}
+
+{#        <div class="owl-carousel owl-theme owl-loaded owl-drag" id="slider-carousel">#}
+{#            <div class="owl-stage-outer">#}
+{#                <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1900px;">#}
+{#                    <div class="owl-item active" style="width: 380px;">#}
+{#                        <div class="item ">#}
+{#                            <div class="card-wrap text_center">#}
+{#                                <div class="icon-wrap">#}
+{#                                    <img src="assets/img/clock.png" alt="">#}
+{#                                </div>#}
+{#                                <h3 class="heading heading_sm">отсрочка платежа</h3>#}
+{#                                <div>#}
+{#                                    <p class="text_md">Получите заказ и оплачивайте его#}
+{#                                        в течение 30 дней</p>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div></div>#}
+{#                    <div class="owl-item active" style="width: 380px;">#}
+{#                        <div class="item ">#}
+{#                            <div class="card-wrap text_center">#}
+{#                                <div class="icon-wrap">#}
+{#                                    <img src="assets/img/build.png" alt="">#}
+{#                                </div>#}
+{#                                <h3 class="heading heading_sm">Работаем с НДС и без</h3>#}
+{#                                <div>#}
+{#                                    <p class="text_md">Можем провести сделку с НДС, так и без него</p>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div></div><div class="owl-item active" style="width: 380px;"><div class="item ">#}
+{#                            <div class="card-wrap text_center">#}
+{#                                <div class="icon-wrap">#}
+{#                                    <img src="assets/img/monitor.png" alt="">#}
+{#                                </div>#}
+{#                                <h3 class="heading heading_sm">Скидки от 50 000 рублей</h3>#}
+{#                                <div class="text-wrap">#}
+{#                                    <p class="text_md">При объемах от 50 000 рублей мы даем персональные скидки</p>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div></div><div class="owl-item" style="width: 380px;"><div class="item ">#}
+{#                            <div class="card-wrap text_center">#}
+{#                                <div class="icon-wrap">#}
+{#                                    <img src="assets/img/build.png" alt="">#}
+{#                                </div>#}
+{#                                <h3 class="heading heading_sm">Работаем с НДС и без</h3>#}
+{#                                <div>#}
+{#                                    <p class="text_md">Можем провести сделку с НДС, так и без него</p>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div></div><div class="owl-item" style="width: 380px;"><div class="item ">#}
+{#                            <div class="card-wrap text_center">#}
+{#                                <div class="icon-wrap">#}
+{#                                    <img src="assets/img/monitor.png" alt="">#}
+{#                                </div>#}
+{#                                <h3 class="heading heading_sm">Скидки от 50 000 рублей</h3>#}
+{#                                <div>#}
+{#                                    <p class="text_md">При объемах от 50 000 рублей мы даем персональные скидки</p>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div></div></div></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev disabled"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots"><button role="button" class="owl-dot active"><span></span></button><button role="button" class="owl-dot"><span></span></button></div></div>#}
+{#    </div>#}
+{#</section>#}

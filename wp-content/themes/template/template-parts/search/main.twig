@@ -1,0 +1,90 @@
+
+<main>
+    <div class="container">
+        <h1 class="heading heading_lg text_center">{{ title }}</h1>
+        <div class="row flex-row-reverse" id="sticky-parent">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+                <div class="catalog-table">
+                    <div class="catalog-table__header">
+                        <div class="catalog-table__cell type">Марка</div>
+                        <div class="catalog-table__cell price">номер, цена</div>
+                        <div class="catalog-table__cell quantity">количество</div>
+                        <div class="catalog-table__cell cell-btn"></div>
+                    </div>
+                    <div class="catalog-table__body">
+                        {% for item in products %}
+                            <div class="catalog-table__row" data-marks="{{ function('get_terms_ids',item.ID,'tax_marks') }}">
+                                <div class="catalog-table__cell type">
+                                    <div class="type__text">{{ get_terms_title(function('get_the_terms',item.ID,'tax_marks')) }}</div>
+                                    <a href="{{ get_page_link(item.ID) }}" class="d-block product-link">{{ item.post_title }}</a>
+                                </div>
+                                <div class="catalog-table__cell price">
+
+                                    <div class="serial-number">
+                                        {#                                        {{ function('wc_get_attribete',item.ID,'catalog_number') }}#}
+                                        {{ item._sku }}
+                                    </div>
+                                    <div class="price__text text_primary">{{ function('wc_get_price',item.ID) }} Р</div>
+                                </div>
+                                <div class="catalog-table__cell quantity">
+                                    <div class="number-input flex-shrink-0">
+                                        <input type="number" min="1" value="1" class="number-input__field">
+                                        <button class="number-input__control number-input__control_minus"></button>
+                                        <button class="number-input__control number-input__control_plus"></button>
+                                    </div>
+                                </div>
+                                <div class="catalog-table__cell cell-btn">
+                                    <div data-id="{{ item.ID }}" class="btn btn_warn btn_md add_to_basket">отложить</div>
+                                </div>
+                            </div>
+
+                        {% endfor %}
+                    </div>
+
+                    <div class="pagination">
+                        {% if products.pagination.prev %}
+                            <a class="pagination__item" href="{{products.pagination.prev.link}}">
+                            <span class="pagination__btn pagination__btn_nav">
+                               <svg class="icon-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                   <title>chevron-thin-left</title>
+                                        <path fill="#808080" d="M13.891 17.418c0.268 0.272 0.268 0.709 0 0.979s-0.701 0.271-0.969 0l-7.83-7.908c-0.268-0.27-0.268-0.707 0-0.979l7.83-7.908c0.268-0.27 0.701-0.27 0.969 0s0.268 0.709 0 0.979l-7.141 7.419 7.141 7.418z"></path>
+                                </svg>
+                            </span>
+                                <span class="pagination__text">Пред.</span>
+                            </a>
+                        {% endif %}
+
+                        <div class="pagination__item pagination__scale">
+
+                            {% for page in products.pagination.pages %}
+
+                                <li>
+                                    {% if page.link %}
+                                        <a href="{{page.link}}" class="pagination__btn {{page.class}}">{{page.title}}</a>
+                                    {% else %}
+                                        <span class="pagination__btn {{page.class}}">{{page.title}}</span>
+                                    {% endif %}
+                                </li>
+                            {% endfor %}
+                        </div>
+                        {% if products.pagination.next %}
+                            <a href="{{products.pagination.next.link}}" class="pagination__item text_right {{posts.pagination.next.link|length ? '' : 'invisible'}}">
+                                <span class="pagination__text">След.</span>
+                                <span class="pagination__btn pagination__btn_nav">
+                            <svg class="icon-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                <title>chevron-thin-right</title>
+                                <path fill="#808080" d="M13.25 10l-7.141-7.42c-0.268-0.27-0.268-0.707 0-0.979 0.268-0.27 0.701-0.27 0.969 0l7.83 7.908c0.268 0.271 0.268 0.709 0 0.979l-7.83 7.908c-0.268 0.271-0.701 0.27-0.969 0s-0.268-0.707 0-0.979l7.141-7.417z"></path>
+                            </svg>
+                            </span>
+                            </a>
+                        {% endif %}
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-2">
+            </div>
+        </div>
+    </div>
+</main>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+{#    <title>Автозапчасти</title>#}
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100&display=swap" rel="stylesheet">
+{#    <link rel="stylesheet" href="fonts/fonts.css">#}
+    <!--styles-->
+{#    <link rel="stylesheet" href="build/main.css">#}
+    {{ wp_head() }}
+    <style>
+        html{
+            margin-top: 0 !important;
+        }
+    </style>
+</head>
+<body {{ function('body_class') }}>
+<div class="wrapper">
+{{ function('wp_body_open') }}

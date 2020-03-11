@@ -1,0 +1,33 @@
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__navbar">
+                <nav class="footer-nav">
+                    {{ wp_menu_footer() }}
+                </nav>
+                <a href="tel:{{ phone }}" class="phone-link footer-phone text_sm">{{ phone }}</a>
+            </div>
+        </div>
+    </footer>
+    {{ wp_footer() }}
+</div><!---------[ div.wrapper ]--------->
+
+    <div class="b-popup" id="buy-completed">
+        <div class="b-popup-content">
+            Ваш товар в корзине
+            <div class="row">
+                <a href="{{ get_page_link(71) }}" class="btn btn_warn btn_md">Перейти к оформлению</a>
+                <a class="btn btn_warn btn_md" onclick="PopUpHide($('#buy-completed'))">продолжить покупки</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="b-popup" id="order-completed">
+        <div class="b-popup-content">
+            Ваш заказ отправлен на обработку. В ближайшее время с Вами свяжется сотрудник для подтверждения заказа
+            <div class="row">
+                <a class="btn btn_warn btn_md" onclick="location='http://'+location.host;">OK</a>
+            </div>
+
+        </div>
+    </div>

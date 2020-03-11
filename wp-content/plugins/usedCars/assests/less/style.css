@@ -1,0 +1,227 @@
+/*--------------------[ COLORS ]--------------------*/
+.blue-cyan {
+  background-image: linear-gradient(135deg, #43cbff 10%, #9708cc 100%);
+}
+.grey {
+  background-color: #ededed;
+}
+.lGrey {
+  background-color: #a2a2a2;
+}
+.dGrey {
+  background-color: #747474;
+}
+.dark {
+  background-color: #242b34;
+}
+.red {
+  background-color: #e3173e;
+}
+.cyan {
+  background-color: #00a1df;
+}
+.dBlue {
+  background-color: #005593;
+}
+.blue {
+  background-color: #00ffff;
+}
+.black {
+  background-color: #000000;
+}
+.white {
+  background-color: #ffffff;
+}
+.fGrey {
+  color: #ededed;
+}
+.fLgrey {
+  color: #a2a2a2;
+}
+.fDgrey {
+  color: #747474;
+}
+.fDark {
+  color: #242b34;
+}
+.fRed {
+  color: #e3173e;
+}
+.fCyan {
+  color: #00a1df;
+}
+.fBlue {
+  color: #00ffff;
+}
+.fBlack {
+  color: #000000;
+}
+.fWhite {
+  color: #ffffff;
+}
+/*--------------------[ position ]--------------------*/
+.flex_column {
+  display: flex;
+  flex-direction: column;
+}
+.flex_row {
+  display: flex;
+  flex-direction: row;
+}
+.justify_start {
+  display: flex;
+  justify-content: flex-start;
+}
+.justify_around {
+  display: flex;
+  justify-content: space-around;
+}
+.justify_between {
+  display: flex;
+  justify-content: space-between;
+}
+.justify_center {
+  display: flex;
+  justify-content: center;
+}
+.justify_end {
+  display: flex;
+  justify-content: flex-end;
+}
+.align_start {
+  display: flex;
+  align-items: flex-start;
+}
+.align_center {
+  display: flex;
+  align-items: center;
+}
+.align_end {
+  display: flex;
+  align-items: flex-end;
+}
+.align_self_start {
+  align-self: start;
+}
+.align_self_center {
+  align-self: center;
+}
+.align_self_end {
+  align-self: end;
+}
+.flex_wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*--------------------[ style ]--------------------*/
+#demento-content {
+  margin: 2em 0;
+}
+#demento-content .carDataBase .header ul.navbar-nav li {
+  cursor: pointer;
+}
+#demento-content .carDataBase .header ul.navbar-nav li span {
+  padding: 0 0.4rem;
+}
+#demento-content .carDataBase .wrapper-content {
+  position: relative;
+}
+#demento-content .carDataBase .wrapper-content .content {
+  position: absolute;
+  top: 0;
+  left: -9999px;
+  width: 100%;
+  padding-top: 2em;
+}
+#demento-content .carDataBase .wrapper-content .content:first-child {
+  left: 0;
+}
+#demento-content .carDataBase .wrapper-content .content .saveFoTextarea {
+  margin: 2rem auto;
+  display: block;
+}
+/*--------------------[ select-box ]--------------------*/
+.select-box {
+  position: relative;
+}
+.select-box.last ul {
+  left: initial;
+  right: 0;
+}
+.select-box:disabled button {
+  color: grey;
+  cursor: auto;
+}
+.select-box > button {
+  width: 100%;
+}
+.select-box ul {
+  position: absolute;
+  display: none;
+  opacity: 0;
+  top: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.select-box ul li {
+  position: relative;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.select-box ul li.search {
+  background-color: #ffffff;
+}
+.select-box ul li.add {
+  text-align: center;
+  display: none;
+}
+.select-box ul li:hover:not(.search):not(.add) {
+  background-color: #0073aa;
+  color: #ffffff;
+  transition-duration: 0.4s;
+}
+.select-box ul li .remove {
+  position: absolute;
+  right: 10px;
+  top: 20%;
+  width: 20px;
+  height: 20px;
+  opacity: 0.3;
+}
+.select-box ul li .remove:hover {
+  opacity: 1;
+}
+.select-box ul li .remove:before,
+.select-box ul li .remove:after {
+  position: absolute;
+  left: 10px;
+  content: ' ';
+  height: 20px;
+  width: 2px;
+  background-color: #c82333;
+}
+.select-box ul li .remove:before {
+  transform: rotate(45deg);
+}
+.select-box ul li .remove:after {
+  transform: rotate(-45deg);
+}
+.list-mark_model_restyling {
+  width: 100%;
+}
+.equipment-wrapper h3 {
+  padding: 2rem 0  ;
+  width: 100%;
+}
+.equipment-wrapper > .form-group {
+  width: 30%;
+  max-width: 30%;
+}
+.characters-wrapper > .form-group {
+  width: 25%;
+}

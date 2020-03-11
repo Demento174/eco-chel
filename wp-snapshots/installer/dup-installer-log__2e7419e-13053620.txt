@@ -1,0 +1,547 @@
+********************************************************************************
+* DUPLICATOR-PRO: Install-Log
+* STEP-1 START @ 07:51:06
+* VERSION: 1.3.18
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+PACKAGE INFO________ CURRENT SERVER                         |ORIGINAL SERVER
+PHP VERSION_________: 5.6.38                                |5.6.38
+OS__________________: Linux                                 |Linux
+CREATED_____________: 2019-08-13 05:36:20
+WP VERSION__________: 5.2.2
+DUP VERSION_________: 1.3.18
+DB__________________: 5.7.21
+DB TABLES___________: 36
+DB ROWS_____________: 84,062
+DB FILE SIZE________: 18.78MB
+********************************************************************************
+SERVER INFO
+PHP_________________: 5.6.38 | SAPI: apache2handler
+PHP MEMORY__________: 4294967296 | SUHOSIN: disabled
+SERVER______________: Apache/2.4.10 (Unix)
+DOC ROOT____________: "/home/i/infovokh/eco-chel/public_html"
+DOC ROOT 755________: true
+LOG FILE 644________: true
+REQUEST URL_________: "http://eco-chel74.ru/dup-installer/main.installer.php"
+********************************************************************************
+USER INPUTS
+ARCHIVE ENGINE______: "shellexec_unzip"
+SET DIR PERMS_______: 1
+DIR PERMS VALUE_____: 1363
+SET FILE PERMS______: 1
+FILE PERMS VALUE____: 1204
+SAFE MODE___________: "0"
+LOGGING_____________: "1"
+CONFIG MODE_________: "NEW"
+FILE TIME___________: "current"
+********************************************************************************
+
+
+--------------------------------------
+ARCHIVE SETUP
+--------------------------------------
+NAME________________: "20190807_d0b0d0b2d182d0bed0b7d0b0d0bfd1_2e7419e219e07f876017_20190813053620_archive.zip"
+SIZE________________: 46.09MB
+
+PRE-EXTRACT-CHECKS
+- PASS: Apache '.htaccess' not found - no backup needed.
+- PASS: Microsoft IIS 'web.config' not found - no backup needed.
+- PASS: WordFence '.user.ini' not found - no backup needed.
+
+
+START ZIP FILE EXTRACTION SHELLEXEC >>> 
+>>> Starting Shell-Exec Unzip:
+Command: unzip -o -qq '/home/i/infovokh/eco-chel/public_html/20190807_d0b0d0b2d182d0bed0b7d0b0d0bfd1_2e7419e219e07f876017_20190813053620_archive.zip' -d '/home/i/infovokh/eco-chel/public_html' 2>&1
+<<< Shell-Exec Unzip Complete.
+--------------------------------------
+POST-EXTACT-CHECKS
+--------------------------------------
+PERMISSION UPDATES:
+    -DIRS:  '755'
+    -FILES: '644'
+
+STEP-1 COMPLETE @ 07:51:09 - RUNTIME: 3.8473 sec.
+[PHP ERR][ISSUE] MSG:Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. [CODE:8192|FILE:Unknown|LINE:0]
+[PHP ERR][ISSUE] MSG:Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. [CODE:8192|FILE:Unknown|LINE:0]
+
+
+
+********************************************************************************
+* DUPLICATOR-LITE INSTALL-LOG
+* STEP-2 START @ 07:52:52
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+USER INPUTS
+VIEW MODE___________: "basic"
+DB ACTION___________: "empty"
+DB HOST_____________: "**OBSCURED**"
+DB NAME_____________: "**OBSCURED**"
+DB PASS_____________: "**OBSCURED**"
+DB PORT_____________: "**OBSCURED**"
+NON-BREAKING SPACES_: false
+MYSQL MODE__________: "DEFAULT"
+MYSQL MODE OPTS_____: ""
+CHARSET_____________: "utf8"
+COLLATE_____________: "utf8_general_ci"
+COLLATE FB__________: false
+VIEW CREATION_______: true
+STORED PROCEDURE____: true
+********************************************************************************
+
+--------------------------------------
+DATABASE-ENVIRONMENT
+--------------------------------------
+MYSQL VERSION:	This Server: 5.7.21 -- Build Server: 5.7.21
+FILE SIZE:	dup-database__2e7419e-13053620.sql (5.46MB)
+TIMEOUT:	5000
+MAXPACK:	33554432
+SQLMODE:	NOT_SET
+NEW SQL FILE:	[/home/i/infovokh/eco-chel/public_html/dup-installer/dup-installer-data__2e7419e-13053620.sql]
+COLLATE FB:	Off
+--------------------------------------
+DATABASE RESULTS
+--------------------------------------
+DB VIEWS:	enabled
+DB PROCEDURES:	enabled
+ERRORS FOUND:	0
+DROPPED TABLES:	0
+RENAMED TABLES:	0
+QUERIES RAN:	320
+
+wp_commentmeta: (0)
+wp_comments: (1)
+wp_duplicator_packages: (0)
+wp_links: (0)
+wp_options: (308)
+wp_pmxi_files: (6)
+wp_pmxi_history: (6)
+wp_pmxi_images: (0)
+wp_pmxi_imports: (6)
+wp_pmxi_posts: (2696)
+wp_pmxi_templates: (0)
+wp_postmeta: (63398)
+wp_posts: (2786)
+wp_term_relationships: (10792)
+wp_term_taxonomy: (40)
+wp_termmeta: (46)
+wp_terms: (40)
+wp_usermeta: (56)
+wp_users: (2)
+wp_wc_download_log: (0)
+wp_wc_product_meta_lookup: (2924)
+wp_wc_webhooks: (0)
+wp_woocommerce_api_keys: (0)
+wp_woocommerce_attribute_taxonomies: (1)
+wp_woocommerce_downloadable_product_permissions: (0)
+wp_woocommerce_log: (0)
+wp_woocommerce_order_itemmeta: (0)
+wp_woocommerce_order_items: (0)
+wp_woocommerce_payment_tokenmeta: (0)
+wp_woocommerce_payment_tokens: (0)
+wp_woocommerce_sessions: (2)
+wp_woocommerce_shipping_zone_locations: (0)
+wp_woocommerce_shipping_zone_methods: (0)
+wp_woocommerce_shipping_zones: (0)
+wp_woocommerce_tax_rate_locations: (0)
+wp_woocommerce_tax_rates: (0)
+Removed '62' cache/transient rows
+
+INSERT DATA RUNTIME: 1.7796 sec.
+STEP-2 COMPLETE @ 07:52:54 - RUNTIME: 1.8004 sec.
+[PHP ERR][ISSUE] MSG:Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. [CODE:8192|FILE:Unknown|LINE:0]
+[PHP ERR][ISSUE] MSG:Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. [CODE:8192|FILE:Unknown|LINE:0]
+
+====================================
+SET SEARCH AND REPLACE LIST
+====================================
+
+
+********************************************************************************
+DUPLICATOR PRO INSTALL-LOG
+STEP-3 START @ 07:53:22
+NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+CHARSET SERVER:	"utf8"
+CHARSET CLIENT:	"utf8"
+********************************************************************************
+OPTIONS:
+blogname______________: "Авто запчасти"
+postguid______________: false
+fullsearch____________: false
+path_old______________: "/home/d/demento/parts/public_html/"
+path_new______________: "/home/i/infovokh/eco-chel/public_html/"
+siteurl_______________: "http://eco-chel74.ru"
+url_old_______________: "http://parts.demento174.ru"
+url_new_______________: "http://eco-chel74.ru"
+maxSerializeStrlen____: 4000000
+replaceMail___________: false
+dbhost________________: "localhost"
+dbuser________________: "infovokh_eco"
+dbname________________: "infovokh_eco"
+dbcharset_____________: "utf8"
+dbcollate_____________: "utf8_general_ci"
+wp_username___________: ""
+wp_mail_______________: ""
+wp_nickname___________: ""
+wp_first_name_________: ""
+wp_last_name__________: ""
+ssl_admin_____________: false
+cache_wp______________: false
+cache_path____________: false
+exe_safe_mode_________: false
+config_mode___________: "NEW"
+********************************************************************************
+
+
+====================================
+RUN SEARCH AND REPLACE
+====================================
+
+EVALUATE TABLE: "wp_commentmeta"__________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_comments"_____________________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/d/demento/parts/public_html/" ==============> "/home/i/infovokh/eco-chel/public_html/"
+	SEARCH  2:"\/home\/d\/demento\/parts\/public_html\/" ========> "\/home\/i\/infovokh\/eco-chel\/public_html\/"
+	SEARCH  3:"%2Fhome%2Fd%2Fdemento%2Fparts%2Fpublic_html%2F" ==> "%2Fhome%2Fi%2Finfovokh%2Feco-chel%2Fpublic_html%2F"
+	SEARCH  4:"\home\d\demento\parts\public_html" ===============> "/home/i/infovokh/eco-chel/public_html"
+	SEARCH  5:"\\home\\d\\demento\\parts\\public_html" ==========> "\/home\/i\/infovokh\/eco-chel\/public_html"
+	SEARCH  6:"%5Chome%5Cd%5Cdemento%5Cparts%5Cpublic_html" =====> "%2Fhome%2Fi%2Finfovokh%2Feco-chel%2Fpublic_html"
+	SEARCH  7:"//parts.demento174.ru" ===========================> "//eco-chel74.ru"
+	SEARCH  8:"\/\/parts.demento174.ru" =========================> "\/\/eco-chel74.ru"
+	SEARCH  9:"%2F%2Fparts.demento174.ru" =======================> "%2F%2Feco-chel74.ru"
+	SEARCH 10:"https://eco-chel74.ru" ===========================> "http://eco-chel74.ru"
+	SEARCH 11:"https:\/\/eco-chel74.ru" =========================> "http:\/\/eco-chel74.ru"
+	SEARCH 12:"https%3A%2F%2Feco-chel74.ru" =====================> "http%3A%2F%2Feco-chel74.ru"
+
+EVALUATE TABLE: "wp_duplicator_packages"__________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_links"________________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_options"______________________________________[ROWS:   308][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/d/demento/parts/public_html/" ==============> "/home/i/infovokh/eco-chel/public_html/"
+	SEARCH  2:"\/home\/d\/demento\/parts\/public_html\/" ========> "\/home\/i\/infovokh\/eco-chel\/public_html\/"
+	SEARCH  3:"%2Fhome%2Fd%2Fdemento%2Fparts%2Fpublic_html%2F" ==> "%2Fhome%2Fi%2Finfovokh%2Feco-chel%2Fpublic_html%2F"
+	SEARCH  4:"\home\d\demento\parts\public_html" ===============> "/home/i/infovokh/eco-chel/public_html"
+	SEARCH  5:"\\home\\d\\demento\\parts\\public_html" ==========> "\/home\/i\/infovokh\/eco-chel\/public_html"
+	SEARCH  6:"%5Chome%5Cd%5Cdemento%5Cparts%5Cpublic_html" =====> "%2Fhome%2Fi%2Finfovokh%2Feco-chel%2Fpublic_html"
+	SEARCH  7:"//parts.demento174.ru" ===========================> "//eco-chel74.ru"
+	SEARCH  8:"\/\/parts.demento174.ru" =========================> "\/\/eco-chel74.ru"
+	SEARCH  9:"%2F%2Fparts.demento174.ru" =======================> "%2F%2Feco-chel74.ru"
+	SEARCH 10:"https://eco-chel74.ru" ===========================> "http://eco-chel74.ru"
+	SEARCH 11:"https:\/\/eco-chel74.ru" =========================> "http:\/\/eco-chel74.ru"
+	SEARCH 12:"https%3A%2F%2Feco-chel74.ru" =====================> "http%3A%2F%2Feco-chel74.ru"
+
+EVALUATE TABLE: "wp_pmxi_files"___________________________________[ROWS:     6][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/d/demento/parts/public_html/" ==============> "/home/i/infovokh/eco-chel/public_html/"
+	SEARCH  2:"\/home\/d\/demento\/parts\/public_html\/" ========> "\/home\/i\/infovokh\/eco-chel\/public_html\/"
+	SEARCH  3:"%2Fhome%2Fd%2Fdemento%2Fparts%2Fpublic_html%2F" ==> "%2Fhome%2Fi%2Finfovokh%2Feco-chel%2Fpublic_html%2F"
+	SEARCH  4:"\home\d\demento\parts\public_html" ===============> "/home/i/infovokh/eco-chel/public_html"
+	SEARCH  5:"\\home\\d\\demento\\parts\\public_html" ==========> "\/home\/i\/infovokh\/eco-chel\/public_html"
+	SEARCH  6:"%5Chome%5Cd%5Cdemento%5Cparts%5Cpublic_html" =====> "%2Fhome%2Fi%2Finfovokh%2Feco-chel%2Fpublic_html"
+	SEARCH  7:"//parts.demento174.ru" ===========================> "//eco-chel74.ru"
+	SEARCH  8:"\/\/parts.demento174.ru" =========================> "\/\/eco-chel74.ru"
+	SEARCH  9:"%2F%2Fparts.demento174.ru" =======================> "%2F%2Feco-chel74.ru"
+	SEARCH 10:"https://eco-chel74.ru" ===========================> "http://eco-chel74.ru"
+	SEARCH 11:"https:\/\/eco-chel74.ru" =========================> "http:\/\/eco-chel74.ru"
+	SEARCH 12:"https%3A%2F%2Feco-chel74.ru" =====================> "http%3A%2F%2Feco-chel74.ru"
+
+EVALUATE TABLE: "wp_pmxi_history"_________________________________[ROWS:     6][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/d/demento/parts/public_html/" ==============> "/home/i/infovokh/eco-chel/public_html/"
+	SEARCH  2:"\/home\/d\/demento\/parts\/public_html\/" ========> "\/home\/i\/infovokh\/eco-chel\/public_html\/"
+	SEARCH  3:"%2Fhome%2Fd%2Fdemento%2Fparts%2Fpublic_html%2F" ==> "%2Fhome%2Fi%2Finfovokh%2Feco-chel%2Fpublic_html%2F"
+	SEARCH  4:"\home\d\demento\parts\public_html" ===============> "/home/i/infovokh/eco-chel/public_html"
+	SEARCH  5:"\\home\\d\\demento\\parts\\public_html" ==========> "\/home\/i\/infovokh\/eco-chel\/public_html"
+	SEARCH  6:"%5Chome%5Cd%5Cdemento%5Cparts%5Cpublic_html" =====> "%2Fhome%2Fi%2Finfovokh%2Feco-chel%2Fpublic_html"
+	SEARCH  7:"//parts.demento174.ru" ===========================> "//eco-chel74.ru"
+	SEARCH  8:"\/\/parts.demento174.ru" =========================> "\/\/eco-chel74.ru"
+	SEARCH  9:"%2F%2Fparts.demento174.ru" =======================> "%2F%2Feco-chel74.ru"
+	SEARCH 10:"https://eco-chel74.ru" ===========================> "http://eco-chel74.ru"
+	SEARCH 11:"https:\/\/eco-chel74.ru" =========================> "http:\/\/eco-chel74.ru"
+	SEARCH 12:"https%3A%2F%2Feco-chel74.ru" =====================> "http%3A%2F%2Feco-chel74.ru"
+
+EVALUATE TABLE: "wp_pmxi_images"__________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_pmxi_imports"_________________________________[ROWS:     6][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/d/demento/parts/public_html/" ==============> "/home/i/infovokh/eco-chel/public_html/"
+	SEARCH  2:"\/home\/d\/demento\/parts\/public_html\/" ========> "\/home\/i\/infovokh\/eco-chel\/public_html\/"
+	SEARCH  3:"%2Fhome%2Fd%2Fdemento%2Fparts%2Fpublic_html%2F" ==> "%2Fhome%2Fi%2Finfovokh%2Feco-chel%2Fpublic_html%2F"
+	SEARCH  4:"\home\d\demento\parts\public_html" ===============> "/home/i/infovokh/eco-chel/public_html"
+	SEARCH  5:"\\home\\d\\demento\\parts\\public_html" ==========> "\/home\/i\/infovokh\/eco-chel\/public_html"
+	SEARCH  6:"%5Chome%5Cd%5Cdemento%5Cparts%5Cpublic_html" =====> "%2Fhome%2Fi%2Finfovokh%2Feco-chel%2Fpublic_html"
+	SEARCH  7:"//parts.demento174.ru" ===========================> "//eco-chel74.ru"
+	SEARCH  8:"\/\/parts.demento174.ru" =========================> "\/\/eco-chel74.ru"
+	SEARCH  9:"%2F%2Fparts.demento174.ru" =======================> "%2F%2Feco-chel74.ru"
+	SEARCH 10:"https://eco-chel74.ru" ===========================> "http://eco-chel74.ru"
+	SEARCH 11:"https:\/\/eco-chel74.ru" =========================> "http:\/\/eco-chel74.ru"
+	SEARCH 12:"https%3A%2F%2Feco-chel74.ru" =====================> "http%3A%2F%2Feco-chel74.ru"
+
+EVALUATE TABLE: "wp_pmxi_posts"___________________________________[ROWS:  2696][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/d/demento/parts/public_html/" ==============> "/home/i/infovokh/eco-chel/public_html/"
+	SEARCH  2:"\/home\/d\/demento\/parts\/public_html\/" ========> "\/home\/i\/infovokh\/eco-chel\/public_html\/"
+	SEARCH  3:"%2Fhome%2Fd%2Fdemento%2Fparts%2Fpublic_html%2F" ==> "%2Fhome%2Fi%2Finfovokh%2Feco-chel%2Fpublic_html%2F"
+	SEARCH  4:"\home\d\demento\parts\public_html" ===============> "/home/i/infovokh/eco-chel/public_html"
+	SEARCH  5:"\\home\\d\\demento\\parts\\public_html" ==========> "\/home\/i\/infovokh\/eco-chel\/public_html"
+	SEARCH  6:"%5Chome%5Cd%5Cdemento%5Cparts%5Cpublic_html" =====> "%2Fhome%2Fi%2Finfovokh%2Feco-chel%2Fpublic_html"
+	SEARCH  7:"//parts.demento174.ru" ===========================> "//eco-chel74.ru"
+	SEARCH  8:"\/\/parts.demento174.ru" =========================> "\/\/eco-chel74.ru"
+	SEARCH  9:"%2F%2Fparts.demento174.ru" =======================> "%2F%2Feco-chel74.ru"
+	SEARCH 10:"https://eco-chel74.ru" ===========================> "http://eco-chel74.ru"
+	SEARCH 11:"https:\/\/eco-chel74.ru" =========================> "http:\/\/eco-chel74.ru"
+	SEARCH 12:"https%3A%2F%2Feco-chel74.ru" =====================> "http%3A%2F%2Feco-chel74.ru"
+
+EVALUATE TABLE: "wp_pmxi_templates"_______________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_postmeta"_____________________________________[ROWS: 63398][PG:  19][SCAN:text columns]
+	SEARCH  1:"/home/d/demento/parts/public_html/" ==============> "/home/i/infovokh/eco-chel/public_html/"
+	SEARCH  2:"\/home\/d\/demento\/parts\/public_html\/" ========> "\/home\/i\/infovokh\/eco-chel\/public_html\/"
+	SEARCH  3:"%2Fhome%2Fd%2Fdemento%2Fparts%2Fpublic_html%2F" ==> "%2Fhome%2Fi%2Finfovokh%2Feco-chel%2Fpublic_html%2F"
+	SEARCH  4:"\home\d\demento\parts\public_html" ===============> "/home/i/infovokh/eco-chel/public_html"
+	SEARCH  5:"\\home\\d\\demento\\parts\\public_html" ==========> "\/home\/i\/infovokh\/eco-chel\/public_html"
+	SEARCH  6:"%5Chome%5Cd%5Cdemento%5Cparts%5Cpublic_html" =====> "%2Fhome%2Fi%2Finfovokh%2Feco-chel%2Fpublic_html"
+	SEARCH  7:"//parts.demento174.ru" ===========================> "//eco-chel74.ru"
+	SEARCH  8:"\/\/parts.demento174.ru" =========================> "\/\/eco-chel74.ru"
+	SEARCH  9:"%2F%2Fparts.demento174.ru" =======================> "%2F%2Feco-chel74.ru"
+	SEARCH 10:"https://eco-chel74.ru" ===========================> "http://eco-chel74.ru"
+	SEARCH 11:"https:\/\/eco-chel74.ru" =========================> "http:\/\/eco-chel74.ru"
+	SEARCH 12:"https%3A%2F%2Feco-chel74.ru" =====================> "http%3A%2F%2Feco-chel74.ru"
+
+EVALUATE TABLE: "wp_posts"________________________________________[ROWS:  2786][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/d/demento/parts/public_html/" ==============> "/home/i/infovokh/eco-chel/public_html/"
+	SEARCH  2:"\/home\/d\/demento\/parts\/public_html\/" ========> "\/home\/i\/infovokh\/eco-chel\/public_html\/"
+	SEARCH  3:"%2Fhome%2Fd%2Fdemento%2Fparts%2Fpublic_html%2F" ==> "%2Fhome%2Fi%2Finfovokh%2Feco-chel%2Fpublic_html%2F"
+	SEARCH  4:"\home\d\demento\parts\public_html" ===============> "/home/i/infovokh/eco-chel/public_html"
+	SEARCH  5:"\\home\\d\\demento\\parts\\public_html" ==========> "\/home\/i\/infovokh\/eco-chel\/public_html"
+	SEARCH  6:"%5Chome%5Cd%5Cdemento%5Cparts%5Cpublic_html" =====> "%2Fhome%2Fi%2Finfovokh%2Feco-chel%2Fpublic_html"
+	SEARCH  7:"//parts.demento174.ru" ===========================> "//eco-chel74.ru"
+	SEARCH  8:"\/\/parts.demento174.ru" =========================> "\/\/eco-chel74.ru"
+	SEARCH  9:"%2F%2Fparts.demento174.ru" =======================> "%2F%2Feco-chel74.ru"
+	SEARCH 10:"https://eco-chel74.ru" ===========================> "http://eco-chel74.ru"
+	SEARCH 11:"https:\/\/eco-chel74.ru" =========================> "http:\/\/eco-chel74.ru"
+	SEARCH 12:"https%3A%2F%2Feco-chel74.ru" =====================> "http%3A%2F%2Feco-chel74.ru"
+
+EVALUATE TABLE: "wp_term_relationships"___________________________[ROWS: 10792][PG:   4][SCAN:text columns]
+	SEARCH  1:"/home/d/demento/parts/public_html/" ==============> "/home/i/infovokh/eco-chel/public_html/"
+	SEARCH  2:"\/home\/d\/demento\/parts\/public_html\/" ========> "\/home\/i\/infovokh\/eco-chel\/public_html\/"
+	SEARCH  3:"%2Fhome%2Fd%2Fdemento%2Fparts%2Fpublic_html%2F" ==> "%2Fhome%2Fi%2Finfovokh%2Feco-chel%2Fpublic_html%2F"
+	SEARCH  4:"\home\d\demento\parts\public_html" ===============> "/home/i/infovokh/eco-chel/public_html"
+	SEARCH  5:"\\home\\d\\demento\\parts\\public_html" ==========> "\/home\/i\/infovokh\/eco-chel\/public_html"
+	SEARCH  6:"%5Chome%5Cd%5Cdemento%5Cparts%5Cpublic_html" =====> "%2Fhome%2Fi%2Finfovokh%2Feco-chel%2Fpublic_html"
+	SEARCH  7:"//parts.demento174.ru" ===========================> "//eco-chel74.ru"
+	SEARCH  8:"\/\/parts.demento174.ru" =========================> "\/\/eco-chel74.ru"
+	SEARCH  9:"%2F%2Fparts.demento174.ru" =======================> "%2F%2Feco-chel74.ru"
+	SEARCH 10:"https://eco-chel74.ru" ===========================> "http://eco-chel74.ru"
+	SEARCH 11:"https:\/\/eco-chel74.ru" =========================> "http:\/\/eco-chel74.ru"
+	SEARCH 12:"https%3A%2F%2Feco-chel74.ru" =====================> "http%3A%2F%2Feco-chel74.ru"
+
+EVALUATE TABLE: "wp_term_taxonomy"________________________________[ROWS:    40][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/d/demento/parts/public_html/" ==============> "/home/i/infovokh/eco-chel/public_html/"
+	SEARCH  2:"\/home\/d\/demento\/parts\/public_html\/" ========> "\/home\/i\/infovokh\/eco-chel\/public_html\/"
+	SEARCH  3:"%2Fhome%2Fd%2Fdemento%2Fparts%2Fpublic_html%2F" ==> "%2Fhome%2Fi%2Finfovokh%2Feco-chel%2Fpublic_html%2F"
+	SEARCH  4:"\home\d\demento\parts\public_html" ===============> "/home/i/infovokh/eco-chel/public_html"
+	SEARCH  5:"\\home\\d\\demento\\parts\\public_html" ==========> "\/home\/i\/infovokh\/eco-chel\/public_html"
+	SEARCH  6:"%5Chome%5Cd%5Cdemento%5Cparts%5Cpublic_html" =====> "%2Fhome%2Fi%2Finfovokh%2Feco-chel%2Fpublic_html"
+	SEARCH  7:"//parts.demento174.ru" ===========================> "//eco-chel74.ru"
+	SEARCH  8:"\/\/parts.demento174.ru" =========================> "\/\/eco-chel74.ru"
+	SEARCH  9:"%2F%2Fparts.demento174.ru" =======================> "%2F%2Feco-chel74.ru"
+	SEARCH 10:"https://eco-chel74.ru" ===========================> "http://eco-chel74.ru"
+	SEARCH 11:"https:\/\/eco-chel74.ru" =========================> "http:\/\/eco-chel74.ru"
+	SEARCH 12:"https%3A%2F%2Feco-chel74.ru" =====================> "http%3A%2F%2Feco-chel74.ru"
+
+EVALUATE TABLE: "wp_termmeta"_____________________________________[ROWS:    46][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/d/demento/parts/public_html/" ==============> "/home/i/infovokh/eco-chel/public_html/"
+	SEARCH  2:"\/home\/d\/demento\/parts\/public_html\/" ========> "\/home\/i\/infovokh\/eco-chel\/public_html\/"
+	SEARCH  3:"%2Fhome%2Fd%2Fdemento%2Fparts%2Fpublic_html%2F" ==> "%2Fhome%2Fi%2Finfovokh%2Feco-chel%2Fpublic_html%2F"
+	SEARCH  4:"\home\d\demento\parts\public_html" ===============> "/home/i/infovokh/eco-chel/public_html"
+	SEARCH  5:"\\home\\d\\demento\\parts\\public_html" ==========> "\/home\/i\/infovokh\/eco-chel\/public_html"
+	SEARCH  6:"%5Chome%5Cd%5Cdemento%5Cparts%5Cpublic_html" =====> "%2Fhome%2Fi%2Finfovokh%2Feco-chel%2Fpublic_html"
+	SEARCH  7:"//parts.demento174.ru" ===========================> "//eco-chel74.ru"
+	SEARCH  8:"\/\/parts.demento174.ru" =========================> "\/\/eco-chel74.ru"
+	SEARCH  9:"%2F%2Fparts.demento174.ru" =======================> "%2F%2Feco-chel74.ru"
+	SEARCH 10:"https://eco-chel74.ru" ===========================> "http://eco-chel74.ru"
+	SEARCH 11:"https:\/\/eco-chel74.ru" =========================> "http:\/\/eco-chel74.ru"
+	SEARCH 12:"https%3A%2F%2Feco-chel74.ru" =====================> "http%3A%2F%2Feco-chel74.ru"
+
+EVALUATE TABLE: "wp_terms"________________________________________[ROWS:    40][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/d/demento/parts/public_html/" ==============> "/home/i/infovokh/eco-chel/public_html/"
+	SEARCH  2:"\/home\/d\/demento\/parts\/public_html\/" ========> "\/home\/i\/infovokh\/eco-chel\/public_html\/"
+	SEARCH  3:"%2Fhome%2Fd%2Fdemento%2Fparts%2Fpublic_html%2F" ==> "%2Fhome%2Fi%2Finfovokh%2Feco-chel%2Fpublic_html%2F"
+	SEARCH  4:"\home\d\demento\parts\public_html" ===============> "/home/i/infovokh/eco-chel/public_html"
+	SEARCH  5:"\\home\\d\\demento\\parts\\public_html" ==========> "\/home\/i\/infovokh\/eco-chel\/public_html"
+	SEARCH  6:"%5Chome%5Cd%5Cdemento%5Cparts%5Cpublic_html" =====> "%2Fhome%2Fi%2Finfovokh%2Feco-chel%2Fpublic_html"
+	SEARCH  7:"//parts.demento174.ru" ===========================> "//eco-chel74.ru"
+	SEARCH  8:"\/\/parts.demento174.ru" =========================> "\/\/eco-chel74.ru"
+	SEARCH  9:"%2F%2Fparts.demento174.ru" =======================> "%2F%2Feco-chel74.ru"
+	SEARCH 10:"https://eco-chel74.ru" ===========================> "http://eco-chel74.ru"
+	SEARCH 11:"https:\/\/eco-chel74.ru" =========================> "http:\/\/eco-chel74.ru"
+	SEARCH 12:"https%3A%2F%2Feco-chel74.ru" =====================> "http%3A%2F%2Feco-chel74.ru"
+
+EVALUATE TABLE: "wp_usermeta"_____________________________________[ROWS:    56][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/d/demento/parts/public_html/" ==============> "/home/i/infovokh/eco-chel/public_html/"
+	SEARCH  2:"\/home\/d\/demento\/parts\/public_html\/" ========> "\/home\/i\/infovokh\/eco-chel\/public_html\/"
+	SEARCH  3:"%2Fhome%2Fd%2Fdemento%2Fparts%2Fpublic_html%2F" ==> "%2Fhome%2Fi%2Finfovokh%2Feco-chel%2Fpublic_html%2F"
+	SEARCH  4:"\home\d\demento\parts\public_html" ===============> "/home/i/infovokh/eco-chel/public_html"
+	SEARCH  5:"\\home\\d\\demento\\parts\\public_html" ==========> "\/home\/i\/infovokh\/eco-chel\/public_html"
+	SEARCH  6:"%5Chome%5Cd%5Cdemento%5Cparts%5Cpublic_html" =====> "%2Fhome%2Fi%2Finfovokh%2Feco-chel%2Fpublic_html"
+	SEARCH  7:"//parts.demento174.ru" ===========================> "//eco-chel74.ru"
+	SEARCH  8:"\/\/parts.demento174.ru" =========================> "\/\/eco-chel74.ru"
+	SEARCH  9:"%2F%2Fparts.demento174.ru" =======================> "%2F%2Feco-chel74.ru"
+	SEARCH 10:"https://eco-chel74.ru" ===========================> "http://eco-chel74.ru"
+	SEARCH 11:"https:\/\/eco-chel74.ru" =========================> "http:\/\/eco-chel74.ru"
+	SEARCH 12:"https%3A%2F%2Feco-chel74.ru" =====================> "http%3A%2F%2Feco-chel74.ru"
+
+EVALUATE TABLE: "wp_users"________________________________________[ROWS:     2][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/d/demento/parts/public_html/" ==============> "/home/i/infovokh/eco-chel/public_html/"
+	SEARCH  2:"\/home\/d\/demento\/parts\/public_html\/" ========> "\/home\/i\/infovokh\/eco-chel\/public_html\/"
+	SEARCH  3:"%2Fhome%2Fd%2Fdemento%2Fparts%2Fpublic_html%2F" ==> "%2Fhome%2Fi%2Finfovokh%2Feco-chel%2Fpublic_html%2F"
+	SEARCH  4:"\home\d\demento\parts\public_html" ===============> "/home/i/infovokh/eco-chel/public_html"
+	SEARCH  5:"\\home\\d\\demento\\parts\\public_html" ==========> "\/home\/i\/infovokh\/eco-chel\/public_html"
+	SEARCH  6:"%5Chome%5Cd%5Cdemento%5Cparts%5Cpublic_html" =====> "%2Fhome%2Fi%2Finfovokh%2Feco-chel%2Fpublic_html"
+	SEARCH  7:"//parts.demento174.ru" ===========================> "//eco-chel74.ru"
+	SEARCH  8:"\/\/parts.demento174.ru" =========================> "\/\/eco-chel74.ru"
+	SEARCH  9:"%2F%2Fparts.demento174.ru" =======================> "%2F%2Feco-chel74.ru"
+	SEARCH 10:"https://eco-chel74.ru" ===========================> "http://eco-chel74.ru"
+	SEARCH 11:"https:\/\/eco-chel74.ru" =========================> "http:\/\/eco-chel74.ru"
+	SEARCH 12:"https%3A%2F%2Feco-chel74.ru" =====================> "http%3A%2F%2Feco-chel74.ru"
+
+EVALUATE TABLE: "wp_wc_download_log"______________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wc_product_meta_lookup"_______________________[ROWS:  2924][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/d/demento/parts/public_html/" ==============> "/home/i/infovokh/eco-chel/public_html/"
+	SEARCH  2:"\/home\/d\/demento\/parts\/public_html\/" ========> "\/home\/i\/infovokh\/eco-chel\/public_html\/"
+	SEARCH  3:"%2Fhome%2Fd%2Fdemento%2Fparts%2Fpublic_html%2F" ==> "%2Fhome%2Fi%2Finfovokh%2Feco-chel%2Fpublic_html%2F"
+	SEARCH  4:"\home\d\demento\parts\public_html" ===============> "/home/i/infovokh/eco-chel/public_html"
+	SEARCH  5:"\\home\\d\\demento\\parts\\public_html" ==========> "\/home\/i\/infovokh\/eco-chel\/public_html"
+	SEARCH  6:"%5Chome%5Cd%5Cdemento%5Cparts%5Cpublic_html" =====> "%2Fhome%2Fi%2Finfovokh%2Feco-chel%2Fpublic_html"
+	SEARCH  7:"//parts.demento174.ru" ===========================> "//eco-chel74.ru"
+	SEARCH  8:"\/\/parts.demento174.ru" =========================> "\/\/eco-chel74.ru"
+	SEARCH  9:"%2F%2Fparts.demento174.ru" =======================> "%2F%2Feco-chel74.ru"
+	SEARCH 10:"https://eco-chel74.ru" ===========================> "http://eco-chel74.ru"
+	SEARCH 11:"https:\/\/eco-chel74.ru" =========================> "http:\/\/eco-chel74.ru"
+	SEARCH 12:"https%3A%2F%2Feco-chel74.ru" =====================> "http%3A%2F%2Feco-chel74.ru"
+
+EVALUATE TABLE: "wp_wc_webhooks"__________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_woocommerce_api_keys"_________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_woocommerce_attribute_taxonomies"_____________[ROWS:     1][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/d/demento/parts/public_html/" ==============> "/home/i/infovokh/eco-chel/public_html/"
+	SEARCH  2:"\/home\/d\/demento\/parts\/public_html\/" ========> "\/home\/i\/infovokh\/eco-chel\/public_html\/"
+	SEARCH  3:"%2Fhome%2Fd%2Fdemento%2Fparts%2Fpublic_html%2F" ==> "%2Fhome%2Fi%2Finfovokh%2Feco-chel%2Fpublic_html%2F"
+	SEARCH  4:"\home\d\demento\parts\public_html" ===============> "/home/i/infovokh/eco-chel/public_html"
+	SEARCH  5:"\\home\\d\\demento\\parts\\public_html" ==========> "\/home\/i\/infovokh\/eco-chel\/public_html"
+	SEARCH  6:"%5Chome%5Cd%5Cdemento%5Cparts%5Cpublic_html" =====> "%2Fhome%2Fi%2Finfovokh%2Feco-chel%2Fpublic_html"
+	SEARCH  7:"//parts.demento174.ru" ===========================> "//eco-chel74.ru"
+	SEARCH  8:"\/\/parts.demento174.ru" =========================> "\/\/eco-chel74.ru"
+	SEARCH  9:"%2F%2Fparts.demento174.ru" =======================> "%2F%2Feco-chel74.ru"
+	SEARCH 10:"https://eco-chel74.ru" ===========================> "http://eco-chel74.ru"
+	SEARCH 11:"https:\/\/eco-chel74.ru" =========================> "http:\/\/eco-chel74.ru"
+	SEARCH 12:"https%3A%2F%2Feco-chel74.ru" =====================> "http%3A%2F%2Feco-chel74.ru"
+
+EVALUATE TABLE: "wp_woocommerce_downloadable_product_permissions"_[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_woocommerce_log"______________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_woocommerce_order_itemmeta"___________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_woocommerce_order_items"______________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_woocommerce_payment_tokenmeta"________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_woocommerce_payment_tokens"___________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_woocommerce_sessions"_________________________[ROWS:     2][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/d/demento/parts/public_html/" ==============> "/home/i/infovokh/eco-chel/public_html/"
+	SEARCH  2:"\/home\/d\/demento\/parts\/public_html\/" ========> "\/home\/i\/infovokh\/eco-chel\/public_html\/"
+	SEARCH  3:"%2Fhome%2Fd%2Fdemento%2Fparts%2Fpublic_html%2F" ==> "%2Fhome%2Fi%2Finfovokh%2Feco-chel%2Fpublic_html%2F"
+	SEARCH  4:"\home\d\demento\parts\public_html" ===============> "/home/i/infovokh/eco-chel/public_html"
+	SEARCH  5:"\\home\\d\\demento\\parts\\public_html" ==========> "\/home\/i\/infovokh\/eco-chel\/public_html"
+	SEARCH  6:"%5Chome%5Cd%5Cdemento%5Cparts%5Cpublic_html" =====> "%2Fhome%2Fi%2Finfovokh%2Feco-chel%2Fpublic_html"
+	SEARCH  7:"//parts.demento174.ru" ===========================> "//eco-chel74.ru"
+	SEARCH  8:"\/\/parts.demento174.ru" =========================> "\/\/eco-chel74.ru"
+	SEARCH  9:"%2F%2Fparts.demento174.ru" =======================> "%2F%2Feco-chel74.ru"
+	SEARCH 10:"https://eco-chel74.ru" ===========================> "http://eco-chel74.ru"
+	SEARCH 11:"https:\/\/eco-chel74.ru" =========================> "http:\/\/eco-chel74.ru"
+	SEARCH 12:"https%3A%2F%2Feco-chel74.ru" =====================> "http%3A%2F%2Feco-chel74.ru"
+
+EVALUATE TABLE: "wp_woocommerce_shipping_zone_locations"__________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_woocommerce_shipping_zone_methods"____________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_woocommerce_shipping_zones"___________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_woocommerce_tax_rate_locations"_______________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_woocommerce_tax_rates"________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+--------------------------------------
+SCANNED:	Tables:36 	|	 Rows:83110 	|	 Cells:406335 
+UPDATED:	Tables:3 	|	 Rows:2791 	|	 Cells:2796 
+ERRORS:		0 
+RUNTIME:	2.394600 sec
+
+====================================
+REMOVE LICENSE KEY
+====================================
+
+====================================
+CREATE NEW ADMIN USER
+====================================
+
+====================================
+CONFIGURATION FILE UPDATES
+====================================
+	UPDATE DB_NAME ""infovokh_eco""
+	UPDATE DB_USER ""infovokh_eco""
+	UPDATE DB_PASSWORD "** OBSCURED **"
+	UPDATE DB_HOST ""localhost""
+	REMOVE WPCACHEHOME
+	
+*** UPDATED WP CONFIG FILE ***
+
+====================================
+HTACCESS UPDATE MODE: "NEW"
+====================================
+- PASS: Successfully created a new .htaccess file.
+- PASS: Existing Apache 'htaccess.orig' was removed
+
+====================================
+GENERAL UPDATES & CLEANUP
+====================================
+
+====================================
+NOTICES TEST
+====================================
+No General Notices Found
+
+
+====================================
+CLEANUP TMP FILES
+====================================
+
+====================================
+FINAL REPORT NOTICES
+====================================
+
+STEP-3 COMPLETE @ 07:53:25 - RUNTIME: 2.4559 sec. 
+
+
+====================================
+FINAL REPORT NOTICES LIST
+====================================
+-----------------------
+[INFO] No search and replace data errors
+	SECTIONS: search_replace
+
+-----------------------
+[INFO] No files extraction errors
+	SECTIONS: files
+
+-----------------------
+[INFO] No errors in database
+	SECTIONS: database
+
+-----------------------
+[INFO] No general notices
+	SECTIONS: general
+
+====================================
+[PHP ERR][ISSUE] MSG:Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. [CODE:8192|FILE:Unknown|LINE:0]

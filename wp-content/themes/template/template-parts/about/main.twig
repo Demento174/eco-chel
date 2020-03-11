@@ -1,0 +1,21 @@
+<section class="section section-company">
+    <article class="article">
+        <div class="container">
+            <h1 class="title-page heading heading_lg text_center">о компании</h1>
+            {% for item in content %}
+                {{ item.content }}
+                <ul class="cards-logo row">
+                    {% for img in item.imgs %}
+                        <li class="cards-logo__item col-6">
+                            <div class="card-logo card-logo_big ">
+                                <div class="card-logo__wrap">
+                                    <img src="{{ img.url }}" alt="{{ img.alt }}" class="card-logo__img">
+                                </div>
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endfor %}
+        </div>
+    </article>
+</section>

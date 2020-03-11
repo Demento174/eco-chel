@@ -1,0 +1,18 @@
+<section class="section section-suppliers">
+    <div class="container">
+        <ul class="cards-logo row">
+            {% for item in items %}
+                <li class="cards-logo__item col-lg-3 col-6">
+                    <a href="{{ function('get_term_link',item.term_id,'tax_marks') }}" class="cards-logo__link">
+                        <div class="card-logo">
+                            <div class="card-logo__wrap">
+                                <img src="{{ get_field('img',item).url }}" alt="{{ get_field('img',item).alt }}" class="card-logo__img">
+                            </div>
+                        </div>
+                        <h3 class="heading text_center heading_sm">{{ item.name }}</h3>
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>

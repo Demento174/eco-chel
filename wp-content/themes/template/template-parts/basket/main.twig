@@ -1,0 +1,130 @@
+<main>
+    <section class="section-cart">
+        <div class="container">
+            <h1 class="heading heading_lg text_center">{{ title }}</h1>
+            <div class="row" id="sticky-parent" style="position: relative;">
+                <div class="col-lg-8">
+                    <div class="catalog-table">
+                        <div class="catalog-table__header">
+                            <div class="catalog-table__cell type">Марка</div>
+                            <div class="catalog-table__cell price">номер, цена</div>
+                            <div class="catalog-table__cell quantity">количество</div>
+                            <div class="catalog-table__cell cell-btn"></div>
+                        </div>
+                        <div class="catalog-table__body">
+                            {% for item in items %}
+
+                                <div class="catalog-table__row" data-key="{{ item.key }}">
+                                    <div class="catalog-table__cell type">
+                                        <div class="type__text">{{ get_terms_title(function('get_the_terms',item.product_id,'tax_marks')) }}</div>
+                                        <a href="{{ item.link }}" class="d-block product-link">{{ item.data.name }}</a>
+                                    </div>
+                                    <div class="catalog-table__cell price">
+                                        <div class="serial-number">
+{#                                            {{ function('wc_get_attribete',item.data.id,'catalog_number') }}#}
+                                            {{ item.data.sku }}
+                                        </div>
+                                        <div class="price__text text_primary">{{ function('wc_get_price',item.data.id) }} Р</div>
+                                    </div>
+                                    <div class="catalog-table__cell quantity">
+                                        <div class="number-input flex-shrink-0">
+                                            <input type="number" value="{{ item.quantity }}" class="number-input__field">
+                                            <button class="number-input__control number-input__control_minus"></button>
+                                            <button class="number-input__control number-input__control_plus"></button>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-table__cell cell-btn">
+                                        <button class="catalog-table__remove-btn" data-key="{{ item.key }}">
+                                            <svg fill="#ffffff" class="icon-close" version="1.1" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20">
+                                                <title>close</title>
+                                                <path d="M10 8.586l-7.071-7.071-1.414 1.414 7.071 7.071-7.071 7.071 1.414 1.414 7.071-7.071 7.071 7.071 1.414-1.414-7.071-7.071 7.071-7.071-1.414-1.414-7.071 7.071z"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                </div>
+                            {% endfor %}
+                        </div>
+                        <div class="catalog-table__footer">
+                            <p><span class="total">Общая стоимость:</span><span class="cost basket_cost"> {{ function('amount_price_in_cart') }}</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <aside id="sidebar" class="" style="">
+                        <div class="sidebar__header">
+                            <h4 class="heading">оформить заявку</h4>
+                        </div>
+                        <div class="sidebar page-cart__sidebar">
+                            <form action="/" method="post" enctype="multipart/form-data" id="contactForm" class="contact-form">
+                                <div class="contact-form__group">
+                                    <label for="inputName" class="d-block">
+                                        <input type="text" class="form-control input input_strocked user" id="inputName" placeholder="ФИО получателя" required="">
+                                    </label>
+
+                                    <label for="inputEmail1" class="d-block">
+                                        <input type="email" class="form-control input input_strocked mail-letter" id="inputEmail1" required="" placeholder="Контактный e-mail">
+                                    </label>
+
+                                    <label for="inputPhone" class="d-block">
+                                        <input type="tel" class="form-control input input_strocked contact-phone" id="inputPhone" required="" placeholder="Контактный телефон">
+                                    </label>
+                                </div>
+
+                                <div class="checkbox-wrap">
+                                    <input type="radio" name="individual" id="individual" class="form-check-input form-control check_order" value="individual" checked>
+                                    <label for="individual">я заказываю как физическео
+                                        лицо</label>
+                                </div>
+
+                                <div class="checkbox-wrap">
+                                    <input type="radio" name="individual" id="entity" class="form-check-input form-control check_order" value="entity">
+                                    <label for="entity">я заказываю как юридическое
+                                        лицо</label>
+                                </div>
+                                <div class="entity_form contact-form__group">
+                                    <label  class="d-block">
+                                        <input type="text" class="form-control input input_strocked " id="entity_name" placeholder="Юридическое название" >
+                                    </label>
+                                    <label  class="d-block">
+                                        <input type="text" class="form-control input input_strocked " id="entity_inn" placeholder="ИНН" >
+                                    </label>
+                                    <label  class="d-block">
+                                        <input type="text" class="form-control input input_strocked " id="entity_kpp" placeholder="КПП" >
+                                    </label>
+                                    <label  class="d-block">
+                                        <input type="text" class="form-control input input_strocked " id="entity_bik" placeholder="БИК" >
+                                    </label>
+                                    <label  class="d-block">
+                                        <input type="text" class="form-control input input_strocked " id="entity_rs" placeholder="Р/С" >
+                                    </label>
+                                    <label  class="d-block">
+                                        <input type="text" class="form-control input input_strocked " id="entity_score" placeholder="Корр/счёт" >
+                                    </label>
+                                </div>
+{#                                <div class="text_center">#}
+{#                                    <label for="uploadDetails" class="label-upload text_decoration" tabindex="0">загрузить реквизиты</label>#}
+{#                                    <input type="file" name="photo" accept="image/jpeg" id="uploadDetails">#}
+{#                                </div>#}
+
+{#                                <div class="block-requisites">#}
+{#                                    <div class="text_center">#}
+{#                                        Прикрепите реквизиты организации#}
+{#                                        для выставления счета#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                                <div class="text_center text_decoration text_primary">#}
+{#                                    <a href="#">заполнить вручную</a>#}
+{#                                </div>#}
+
+                                <button type="submit" class="btn btn_warn btn_block" id="create_order">
+                                    отправить заявку
+                                </button>
+                            </form>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

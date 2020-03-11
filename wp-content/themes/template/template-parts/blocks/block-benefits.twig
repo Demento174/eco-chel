@@ -1,0 +1,23 @@
+<section class="section section-advantages">
+    <div class="container">
+        <h2 class="section__title heading heading_lg text_center">
+        {{ title }}
+        </h2>
+
+        <div class="owl-carousel owl-theme" id="slider-carousel">
+           {% for item in items %}
+               <div class="item ">
+                   <div class="card-wrap text_center">
+                       <div class="icon-wrap">
+                           <img src="{{ item.img.url }}" alt="{{ item.img.alt }}">
+                       </div>
+                       <h3 class="heading heading_sm">{{ item.title }}</h3>
+                       <div>
+                           <p class="text_md">{{ item.description }}</p>
+                       </div>
+                   </div>
+               </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

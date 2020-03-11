@@ -1,0 +1,30 @@
+{% extends '././base.twig' %}
+{% block content %}
+<table class="table table-striped simpleAjax-table">
+    <thead>
+        <tr>
+            <th scope="col">id</th>
+            <th scope="col">Title</th>
+            <th scope="col">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in data %}
+            <tr data-id="{{ item.id }}">
+                <td >
+                    {{ item.id }}
+                </td >
+                <td >
+                    {{ item.title }}
+                </td>
+                <td >
+                    <textarea rows="3" class="form-control">
+                        {{ item.description }}
+                    </textarea>
+                </td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+    <button class="btn btn-primary save-simpleAjax">Сохранить</button>
+{% endblock %}

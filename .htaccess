@@ -1,0 +1,17 @@
+#This Apache config file was created by Duplicator Installer on 2019-08-13 07:53:22.
+#The original can be found in archived file with the name htaccess.orig
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteRule ^^(поиск)/(fsd)/([^/]*)/? //index.php?pagename=$matches[1]&search=$matches[2]&brand=$matches[3] [QSA,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+#RewriteRule ^поиск/([0-9]+)/? index.php?page_id=11169?search=$1 [L]

@@ -1,0 +1,30 @@
+<div class="bg_bottom" style="background-image: url('{{ get_template_directory_uri() }}/assets/img/bg-detals.png');">
+    <section class="section section-about">
+        <div class="container">
+            <div class="row">
+                <a href="{{ left.link }}" class="link col-md-6 col-12">
+                    <h3 class="heading heading_sm text_center">{{ left.title }}</h3>
+                    <div class="card card-about">
+                        <p class="text_md">{{ left.description }}</p>
+                        <div class="wrap-img">
+                            <img src="{{ get_template_directory_uri() }}/assets/img/delivery.png" alt="delivery" class="img img_about">
+                            <img src="{{ get_template_directory_uri() }}/assets/img/delivery1.png" alt="delivery" class="hide">
+                        </div>
+                    </div>
+                </a>
+
+                <a href="{{ right.link }}" class="link col-md-6 col-12">
+                    <h3 class="heading heading_sm text_center">{{ right.title }}</h3>
+                    <div class="card card-about">
+                        <p class="text_md">{{ right.description }}</p>
+                        <div class="wrap-img">
+                            <img src="{{ get_template_directory_uri() }}/assets/img/portfolio-yellow.png" alt="portfolio" class="img img_about">
+                            <img src="{{ get_template_directory_uri() }}/assets/img/portfolio-blue.png" alt="portfolio" class="hide">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+</div>
